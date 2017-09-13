@@ -1,0 +1,7 @@
+#!/bin/bash
+
+osascript -e 'tell application "iTerm2"
+  tell current session of current window
+    split vertically with default profile command "'"$*"'"
+  end tell
+end tell'
